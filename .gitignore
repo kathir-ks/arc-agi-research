@@ -1,0 +1,47 @@
+# TRM source (clone, never fork into this repo)
+third_party/
+
+# Run outputs — flow through GCS, not git
+artifacts/
+activations/
+sae_checkpoints/
+probing_results/
+figures/
+*.pkl
+*.pkl.gz
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.hdf5
+*.bin
+*.gguf
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Local notes (research scratch, not for git)
+NOTES.local.md
+TRM_NOTES.md
+
+# Autoresearch runtime state.
+# Keep results/ and the done.jsonl run log (provenance for LOOP_ANALYSIS.md);
+# drop only the live/ephemeral runtime that the loop rewrites continuously.
+autoresearch/state/inflight.jsonl
+autoresearch/state/pending.json
+autoresearch/state/wrapper.log
+autoresearch/state/archive/
+autoresearch/state/**/__pycache__/
