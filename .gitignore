@@ -1,0 +1,8 @@
+artifacts/
+__pycache__/
+*.pkl
+*.pkl.gz
+.pytest_cache/
+.venv/
+*.egg-info/
+.ipynb_checkpoints/
